@@ -25,6 +25,12 @@ class ActionsTest (unittest.TestCase):
         self.assertFalse('ISLOWER'.islower())
         #deverá retornar verdadeiro pois a afirmação é falsa
 
-    def test_boolean(self):
+    def test_number(self):
         y = 3
         self.assertNotEquals(y, 'tres')
+        #deverá retornar verdadeiro pois são tipo string e number
+
+    def test_string(self):
+
+        self.assertGreater(51000, 5000)
+        #deverá retornar verdadeiro pois o primeiro é maior que o segundo
