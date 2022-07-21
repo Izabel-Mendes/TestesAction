@@ -1,6 +1,6 @@
-from tokenize import Number
+
 import unittest
-from xmlrpc.client import boolean
+
 
 #import TestCase
 
@@ -34,3 +34,12 @@ class ActionsTest (unittest.TestCase):
 
         self.assertGreater(51000, 5000)
         #deverá retornar verdadeiro pois o primeiro é maior que o segundo
+
+    def test_a(self):
+
+        nome = "fgh"
+        completo = "izabelmendes"
+        errormessage = "nome não pertence à completo"
+        self.assertIn(nome, completo, errormessage)
+
+        #teste deverá dar erro pois "nome não pertence à completo"
